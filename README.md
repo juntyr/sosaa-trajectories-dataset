@@ -1,4 +1,9 @@
-# The SOSAA Trajectories Dataset
+# The SOSAA Trajectories Dataset &emsp; [![License]][cc-zero-1.0]
+
+[License]: https://img.shields.io/badge/License-CC0_1.0-black.svg
+[cc-zero-1.0]: http://creativecommons.org/publicdomain/zero/1.0/
+
+The SOSAA Trajectories Dataset includes the settings, inputs, and outputs of several trajectory runs of the [SOSAA model](https://www.helsinki.fi/en/researchgroups/multi-scale-modelling/sosaa).
 
 The SOSAA model is a chemistry transport model that has been actively developed in the Multi-Scale Modelling Group at the University of Helsinki since 2011 [^1]. SOSAA was initially developed to run in stationary mode, in which it simulates the atmospheric processes near a measurement station. However, recent developments have focused on implementing a Lagrangian trajectory mode, in which emissions are picked up along the current mean meteorological trajectory that arrives at the station several days later.
 
@@ -162,6 +167,14 @@ The following sections list the name, semantics, and units for each input and ou
 2. `dp_dry_fs`: dry radius in $\text{m}$ of aerosol particles in each size bin
 3. `lev`: height above the ground in $\text{m}$
 4. `nconc_par`: particle number concentration in $\frac{1}{\text{m}^3}$, indexed by `time`, `dp_dry_fs`, and `lev`
+
+## License
+
+Licensed under the CC0 1.0 license ([LICENSE](LICENSE) or https://creativecommons.org/publicdomain/zero/1.0/).
+
+## Citation
+
+Please refer to the [CITATION.cff](CITATION.cff) file and refer to https://citation-file-format.github.io to extract the citation in a format of your choice.
 
 [^1]: M. Boy *et al*. SOSA – a new model to simulate the concentrations of organic vapours and sulphuric acid inside the ABL -- Part 1: Model description and initial evaluation. *Atmospheric Chemistry and Physics*. 2011;11 (1): 43--51. Available from: [doi:10.5194/acp-11-43-2011](https://doi.org/10.5194/acp-11-43-2011).
 
