@@ -1,0 +1,89 @@
+!==============================================================================!
+!
+! A template of sosa.init
+!
+!==============================================================================!
+
+! Namelist for the SOSAA initiation
+
+&NML_MAIN
+  WORK_DIR   = '/projappl/project_2004394/GOS/sosaa'
+  CODE_DIR   = '/projappl/project_2004394/GOS/sosaa/src',
+  CASE_DIR   = '/projappl/project_2004394/GOS/casedir',
+  CHEM_DIR   = '/projappl/project_2004394/GOS/sosaa/chemistry/sample_aerosol',
+  INPUT_DIR  = '/scratch/project_2004394/JUNIPER/trajectories/inputs/baseline/HYDE_BASE_Y2018',
+  OUTPUT_DIR = '/scratch/project_2004394/JUNIPER/trajectories/outputs/baseline/20180521_T14',
+  STATION    = 'traj',
+/
+
+&NML_FLAG
+  FLAG_SKIP_EXISTING = .false.
+  FLAG_EMIS = 2,
+  FLAG_CHEM = 1,
+  FLAG_GASDRYDEP = 0,
+  FLAG_AERO = 1,
+  FLAG_EMIS_SOIL = 0,
+  FLAG_ECMWF = 1,
+  FLAG_TREE = 1,
+  FLAG_SYN = 0,
+  FLAG_NH3 = 1,
+  FLAG_DEBUG = 0,
+  FLAG_OUTLIST = 0,
+  FLAG_VAPOR = 0,
+  FLAG_FORMAT = 1,
+  FLAG_MODEL_TYPE = 2,
+  FLAG_MIX_CHEM = 1,
+  FLAG_MIX_AERO = 1,
+  USE_PARALLEL_AEROSOL = .true.,
+/
+
+&NML_MISC
+  WEIGH_WITH_SRR = .false.,
+  dma_nh3_fraction = 0d0,
+/
+
+&AER_FLAG
+  OPTIONS%CONDENSATION = .true.,
+  OPTIONS%COAGULATION = .true.,
+  OPTIONS%DRY_DEPOSITION = .false.,
+  OPTIONS%NUCLEATION = .true.,
+  OPTIONS%ACDC = .true.,
+  OPTIONS%ORG_NUCL = .true.,
+  OPTIONS%AER_EMISSIONS = .true.,
+  OPTIONS%SEASALT_EMS = .true.,
+  OPTIONS%SNOW_SCAVENGE = .false.,
+
+  ACDC_SYSTEMS = 1,0,0,0,0
+  ACDC_links(1) = 'A H2SO4 N NH3'
+  ACDC_links(2) = 'A H2SO4 D DMA'
+  ACDC_links(3) = 'A H2SO4 D DMA'
+  ACDC_links(4) = 'A H2SO4 N NH3'
+  ACDC_links(5) = 'A H2SO4 N NH3'
+  vap_names = '../../sosaa/chemistry/sample_aerosol/INPUT/condensable_vapors/EVAPORATION_1.2.2_ALL_1e-9.dat'
+/
+
+&NML_GRID
+  masl = 181.0d0,
+/
+
+&NML_TIME
+  start_date      = 2018, 05, 14,  00,  00,  00 ,
+  aero_start_date = 2018, 05, 14,  00,  00,  00 ,
+  end_date        = 2018, 05, 21, 14,  00,  00 ,
+  dt_obs = 1800.0d0,  ! Time step for observation data
+  dt_mete = 10.0d0,   ! Time step for Scadis
+  dt_chem = 60.0d0,   ! Time step for Kpp
+  dt_emis = 60.0d0,   ! Time step for emission
+  dt_aero = 60.0d0,   ! aerosol simulation time
+  dt_uhma = 60.0d0,   ! timestep iterating in UHMA
+  time_zone = 0.0d0   ! time zone in hour, +2 for SMEAR II
+/
+
+! The code will automatically ignore the species not included in the chemistry scheme.
+&NML_OUTPUT
+  output_list_spc = 'C5H8, MBO, APINENE, CARENE, BPINENE, LIMONENE,BCARY,CH3COCH3,CH4,HCHO,CH3OH,HCOOH,OH,SO2,H2SO4,NH3,NO,NO2,NO3,DMS,O3',
+  output_list_emi = 'APINENE, CARENE, BPINENE, LIMONENE,BCARY, CH3COCH3, SO2, DMS',
+  output_layer_id = '1,2,3,4,5,6,7,8,9,10',
+  output_list_vap = 'C918NO3,BCLKBOH',
+  output_list_Vd = 'C918NO3,BCLKBOH',
+/
