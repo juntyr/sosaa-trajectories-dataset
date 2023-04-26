@@ -19,6 +19,9 @@ authors:
     affiliation: University of Helsinki
     orcid: 'https://orcid.org/0000-0003-3121-0775'
 identifiers:
+  - type: doi
+    value: 10.5281/zenodo.7867138
+    description: The Zenodo release
   - type: url
     value: >-
       https://github.com/juntyr/sosaa-trajectories-dataset/releases/tag/msc-tcm

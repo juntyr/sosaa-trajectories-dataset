@@ -1,4 +1,7 @@
-# The SOSAA Trajectories Dataset &emsp; [![License]][cc-zero-1.0]
+# The SOSAA Trajectories Dataset &emsp; [![DOI]][doi-url] [![License]][cc-zero-1.0]
+
+[DOI]: https://zenodo.org/badge/629363056.svg
+[doi-url]: https://doi.org/10.5281/zenodo.7867138
 
 [License]: https://img.shields.io/badge/License-CC0_1.0-black.svg
 [cc-zero-1.0]: http://creativecommons.org/publicdomain/zero/1.0/
