@@ -178,8 +178,8 @@ Please refer to the [CITATION.cff](CITATION.cff) file and refer to https://citat
 
 This dataset was created as part of [Juniper Tyree](https://github.com/juntyr)'s Masters Thesis ["Prudent Response Surface Models"](https://github.com/juntyr/prudent-response-surface-models) for the M.Sc. Theoretical and Computational Methods programme at the University of Helsinki.
 
-[^1]: M. Boy *et al*. SOSA – a new model to simulate the concentrations of organic vapours and sulphuric acid inside the ABL -- Part 1: Model description and initial evaluation. *Atmospheric Chemistry and Physics*. 2011;11 (1): 43--51. Available from: [doi:10.5194/acp-11-43-2011](https://doi.org/10.5194/acp-11-43-2011).
+[^1]: M. Boy *et al*. SOSA &ndash; a new model to simulate the concentrations of organic vapours and sulphuric acid inside the ABL &ndash; Part 1: Model description and initial evaluation. *Atmospheric Chemistry and Physics*. 2011;11 (1): 43&ndash;51. Available from: [doi:10.5194/acp-11-43-2011](https://doi.org/10.5194/acp-11-43-2011).
 
 [^2]: R. Rew *et al*. Unidata NetCDF. 1989. Available from: [doi:10.5065/D6H70CW6](https://doi.org/10.5065/D6H70CW6).
 
-[^3]: P. Hari *et al*. Station for Measuring Ecosystem-Atmosphere Relations: SMEAR. *Physical and Physiological Forest Ecology*. Edited by P. Hari, K. Heliövaara and L. Kulmala. Dordrecht: Springer Netherlands, 2013, 471--487. Available from: [doi:10.1007/978-94-007-5603-8_9](https://doi.org/10.1007/978-94-007-5603-8_9).
+[^3]: P. Hari *et al*. Station for Measuring Ecosystem-Atmosphere Relations: SMEAR. *Physical and Physiological Forest Ecology*. Edited by P. Hari, K. Heliövaara and L. Kulmala. Dordrecht: Springer Netherlands, 2013, 471&ndash;487. Available from: [doi:10.1007/978-94-007-5603-8_9](https://doi.org/10.1007/978-94-007-5603-8_9).
