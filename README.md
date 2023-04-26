@@ -9,7 +9,7 @@ The SOSAA model is a chemistry transport model that has been actively developed 
 
 Unfortunately, the SOSAA model is not yet publicly available. However, access to the complete SOSAA source code is provided upon request -- please contact Michael Boy (michael.boy@helsinki.fi), Putian Zhou (putian.zhou@helsinki.fi), or Petri Clusius (petri.clusius@helsinki.fi) for more information.
 
-This repository includes the SOSAA trajectories dataset. All runs in this dataset were performed with [SOSAA@10618aa](https://version.helsinki.fi/putian.zhou/sosaa/-/tree/10618aa98c7470546308adf132afb0bc0735b4eb). The [first section](#description-of-the-dataset-layout-and-variables) summarises the layout and variables of the dataset. Next, the [second section](#six-representative-trajectories) explores the six trajectories that are included. The [third section](#sosaa-input-perturbations) provides an overview of the SOSAA input perturbation runs that the dataset contains. Finally, the [fourth section](#list-of-sosaa-input-and-output-variables) gives the full list of input and a selection of output variables in the dataset.
+This repository includes the SOSAA trajectories dataset. All runs in this dataset were performed with [SOSAA@10618aa](https://version.helsinki.fi/putian.zhou/sosaa/-/tree/10618aa98c7470546308adf132afb0bc0735b4eb). The [first section](#description-of-the-dataset-layout-and-variables) summarises the layout and variables of the dataset. Next, the [second section](#six-representative-trajectories) explores the six trajectories that are included. The [third section](#sosaa-input-perturbations) provides an overview of the SOSAA input perturbation runs that the dataset contains. Finally, the [fourth section](#list-of-sosaa-input-and-output-variables) gives a list of selected input and output variables in the dataset.
 
 ## Description of the Dataset Layout and Variables
 
@@ -37,7 +37,7 @@ The [figures](#maps-for-the-six-example-trajectories) below show the paths that 
 3. The third trajectory starts in Estonia and travels clockwise across the Gulf of Finland to the west of Finland before turning towards Russia, from where it heads to its arrival at Hyytiälä on **17.05.2018** at **00:00** UTC.
 4. The fourth trajectory originates in eastern Canada, from where it crosses the Atlantic, over the southern coast of Iceland, before arriving in Norway, from where its path leads north-eastwards across Sweden and the Gulf of Bothnia to Finland, where it arrives on **19.05.2018** at **04:00** UTC.
 5. The fifth trajectory starts north of Scotland, from where it travels eastwards to Norway. From Norway, it follows a clockwise bow-shape over southern Sweden and Denmark, before travelling north-eastwards towards Hyytiälä, where it arrives on **21.05.2018** at **15:00** UTC.
-6. The sixth and final trajectory starts north-west of Scotland from where it first travels southward over England, then sharply turns and travels northwards along the Norwegian coast before making yet another sharp turn to cross the Gulf of Bothnia from northern Sweden to southern Finland, where it arrives on **23.05.2018** at **13:00** UTC.
+6. The sixth and final trajectory starts north-west of Scotland, from where it first travels southward over England, then sharply turns and travels northwards along the Norwegian coast before making yet another sharp turn to cross the Gulf of Bothnia from northern Sweden to southern Finland, where it arrives on **23.05.2018** at **13:00** UTC.
 
 > ### Maps for the Six Example Trajectories
 > | | |
@@ -79,7 +79,7 @@ The following sections list the name, semantics, and units for each input and ou
 
 ### Aerosol Emission Input Variables
 
-1. `layer`: evelation from ground in $\text{m}$
+1. `layer`: elevation from the ground in $\text{m}$
 2. `time`: time until the arrival at Hyytiälä in $\text{s}$
 3. `3-10nm` (**aerosols**): $3-10\text{nm}$ diameter particle emissions in $\frac{\text{kg}}{\text{m}^2  \text{s}}$, indexed by `layer` and `time`
 4. `10-20nm` (**aerosols**): $10-20\text{nm}$ diameter particle emissions in $\frac{\text{kg}}{\text{m}^2  \text{s}}$, indexed by `layer` and `time`
@@ -93,7 +93,7 @@ The following sections list the name, semantics, and units for each input and ou
 
 ### Anthropogenic Emission Input Variables
 
-1. `layer`: evelation from ground in $\text{m}$
+1. `layer`: elevation from the ground in $\text{m}$
 2. `time`: time until the arrival at Hyytiälä in $\text{s}$
 3. `co` (***ungrouped***): $\text{CO}$ emissions in $\frac{\text{kg}}{\text{m}^2  \text{s}}$, indexed by `layer` and `time`
 4. `nox` (**$\text{NO}_{x}$**): $\text{NO}_{x}$ emissions in $\frac{\text{kg}}{\text{m}^2  \text{s}}$, indexed by `layer` and `time`
@@ -175,6 +175,8 @@ Licensed under the CC0 1.0 license ([LICENSE](LICENSE) or https://creativecommon
 ## Citation
 
 Please refer to the [CITATION.cff](CITATION.cff) file and refer to https://citation-file-format.github.io to extract the citation in a format of your choice.
+
+This dataset was created as part of [Juniper Tyree](https://github.com/juntyr)'s Masters Thesis ["Prudent Response Surface Models"](https://github.com/juntyr/prudent-response-surface-models) for the M.Sc. Theoretical and Computational Methods programme at the University of Helsinki.
 
 [^1]: M. Boy *et al*. SOSA – a new model to simulate the concentrations of organic vapours and sulphuric acid inside the ABL -- Part 1: Model description and initial evaluation. *Atmospheric Chemistry and Physics*. 2011;11 (1): 43--51. Available from: [doi:10.5194/acp-11-43-2011](https://doi.org/10.5194/acp-11-43-2011).
 
